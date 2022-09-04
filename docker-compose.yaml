@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  authorization_front:
+    build:
+      context: .
+    container_name: authorization_front
+    networks:
+      main-net:
+        ipv4_address: 172.30.0.7
+
+networks:
+  main-net:
+    external: true
